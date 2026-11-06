@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#05070d">
+  <meta name="description" content="ONE GOL. THREE FRIENDS. TOO MANY PEUGEOTS.">
+  <title>Hangover Accident</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/ui/favicon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- iOS (Safari → Compartilhar → Adicionar à Tela de Início) -->
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Hangover">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Fonte pixel local (funciona offline) -->
+  <link rel="preload" href="assets/fonts/press-start-2p-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div id="game"></div>
+  <div id="crt" aria-hidden="true"></div>
+  <script src="vendor/phaser.min.js"></script>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

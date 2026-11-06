@@ -1,0 +1,14 @@
+{
+  "name": "hangover-accident",
+  "version": "0.2.1",
+  "private": true,
+  "description": "ONE GOL. THREE FRIENDS. TOO MANY PEUGEOTS.",
+  "scripts": {
+    "start": "node tools/serve.js",
+    "assets": "node tools/process-assets.js"
+  },
+  "devDependencies": {
+    "jpeg-js": "0.4.4",
+    "pngjs": "7.0.0"
+  }
+}

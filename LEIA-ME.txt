@@ -1,0 +1,12 @@
+HANGOVER ACCIDENT — ASSETS PNG
+Conversão dos 7 arquivos JPEG originais para PNG.
+As dimensões originais foram preservadas.
+A conversão não remove fundos quadriculados nem cria transparência.
+Arquivos:
+- gol_frente.png
+- gol_vista_superior.png
+- peugeot_prata.png
+- gol_destruido.png
+- joao.png
+- selva.png
+- lucas.png
