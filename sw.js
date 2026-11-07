@@ -3,7 +3,7 @@
 // - Online: sempre a versão mais nova (e o cache é atualizado de carona).
 // - Offline: tudo que foi pré-carregado na instalação continua funcionando.
 // Ao publicar uma versão nova, troque CACHE para forçar a limpeza do cache antigo.
-const CACHE = 'hangover-accident-v0.2.1';
+const CACHE = 'hangover-accident-v0.2.2';
 
 const PRECACHE = [
   './',

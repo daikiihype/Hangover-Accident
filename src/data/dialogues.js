@@ -33,21 +33,24 @@ export const DIALOGUES = {
       [['joao', 'Tanque cheio?'], ['lucas', 'Meio.'], ['joao', 'Meio cheio ou meio vazio?'], ['lucas', 'Meio PREOCUPADO.']],
       [['selva', 'Hoje eu sinto que vai dar tudo certo.'], ['joao', 'Você falou isso da última vez.'], ['selva', 'E eu tava certo?'], ['joao', 'Não.']],
       [['lucas', 'Alguém viu minha chave reserva?'], ['selva', 'Tá no meu bolso.'], ['lucas', 'POR QUE TÁ NO SEU BOLSO?']],
-      [['joao', 'Ok. Retrovisores, banco, cinto.'], ['selva', 'Pastel, refrigerante, playlist.'], ['lucas', 'Isso não é checklist de viagem, Selva.']],
+      [['lucas', 'Ok. Retrovisor, banco, cinto.'], ['selva', 'Pastel, refrigerante, playlist.'], ['lucas', 'Isso é lista de compra, Selva.']],
       [['selva', 'Partiu.'], ['joao', 'Partiu pra onde?'], ['selva', 'Partiu, só. O resto a gente vê.']],
-      [['lucas', 'Eu quero o carro de volta inteiro.'], ['joao', 'Define inteiro.'], ['lucas', 'COM AS QUATRO RODAS, JOÃO.']],
+      [['lucas', 'Eu quero chegar com o carro inteiro.'], ['joao', 'Define inteiro.'], ['lucas', 'COM AS QUATRO RODAS, JOÃO.']],
+      // v0.2.2
+      [['lucas', 'Banco ajustado. Espelho ajustado.'], ['selva', 'E a gente?'], ['lucas', 'Vocês não têm ajuste.']],
+      [['joao', 'Lucas, por que você tá respirando assim?'], ['lucas', 'É aquecimento.'], ['selva', 'Pra quê?'], ['lucas', 'Pra tudo que vai acontecer.']],
     ],
   },
 
   first_peugeot: {
     priority: 3, cooldown: 0, chance: 1,
     conversations: [
-      [['joao', 'Olha lá, mais um.'], ['selva', 'Pô, os caras tão fazendo encontro?'], ['lucas', 'Só desvia, pelo amor de Deus.']],
-      [['selva', 'Peugeot prata. Clássico.'], ['joao', 'Sempre prata. Nunca vi um de outra cor.'], ['lucas', 'FOCA NA ESTRADA.']],
+      [['joao', 'Olha lá, mais um.'], ['selva', 'Pô, os caras tão fazendo encontro?'], ['lucas', 'Eu tô vendo. Eu tô desviando. Pelo amor de Deus.']],
+      [['selva', 'Peugeot prata. Clássico.'], ['joao', 'Sempre prata. Nunca vi um de outra cor.'], ['lucas', 'EU TÔ FOCADO NA ESTRADA. PAREM DE NARRAR.']],
       [['joao', 'Primeiro Peugeot da noite.'], ['lucas', 'Primeiro?'], ['joao', 'Confia, não vai ser o último.']],
       // v0.2
       [['selva', 'Olha, um Peugeot!'], ['joao', 'Agora já era. Onde tem um, tem vinte.'], ['lucas', 'Tipo barata?'], ['joao', 'Tipo barata.']],
-      [['joao', 'Primeiro avistamento confirmado.'], ['selva', 'Anota aí no diário de bordo.'], ['lucas', 'Ninguém anota nada, segura o volante.']],
+      [['joao', 'Primeiro avistamento confirmado.'], ['selva', 'Anota aí no diário de bordo.'], ['lucas', 'Ninguém anota nada. Eu preciso das duas mãos e de silêncio.']],
       [['lucas', 'Prata. É prata.'], ['selva', 'Calma, Lucas. É só um carro.'], ['lucas', 'É SEMPRE SÓ UM CARRO. ATÉ NÃO SER.']],
       [['selva', 'Será que é o mesmo Peugeot que a gente viu ontem?'], ['joao', 'Todos são o mesmo Peugeot, Selva.']],
     ],
@@ -69,14 +72,17 @@ export const DIALOGUES = {
       // v0.2
       [['joao', 'Eles devem vir de fábrica já com a faixa da esquerda incluída.']],
       [['selva', 'Se juntar todos esses Peugeot dá um Peugeot gigante?'], ['joao', 'Dá um engarrafamento.']],
-      [['lucas', 'Ultrapassa com calma.'], ['selva', 'Ele tá a quarenta.'], ['lucas', 'ENTÃO COM MUITA CALMA.']],
+      [['lucas', 'Vou ultrapassar com calma.'], ['selva', 'Ele tá a quarenta.'], ['lucas', 'ENTÃO COM MUITA CALMA.']],
       [['joao', 'Eu respeito. É um estilo de vida.'], ['selva', 'Andar devagar?'], ['joao', 'Andar devagar com convicção.']],
       [['selva', 'Acho que esse aí piscou pra mim.'], ['joao', 'Foi a seta.'], ['selva', 'Uma seta romântica.']],
       [['lucas', 'Por que ele freou do nada?'], ['joao', 'Peugeot não precisa de motivo.']],
       [['selva', 'Vou começar a contar os Peugeot.'], ['joao', 'Vai precisar de calculadora.']],
       [['joao', 'Eu acho que tem um Peugeot por quilômetro quadrado nessa BR.'], ['lucas', 'Isso nem é unidade de estrada.']],
       [['selva', 'Esse tem adesivo de família no vidro?'], ['joao', 'Tem. Pai, mãe, dois filhos e um Peugeot.']],
-      [['lucas', 'NÃO COLA NA TRASEIRA DELE.'], ['selva', 'Ele que tá colando na nossa frente.']],
+      [['joao', 'Lucas, você tá colado na traseira dele.'], ['lucas', 'ELE QUE TÁ COLADO NA MINHA FRENTE.']],
+      // v0.2.2
+      [['joao', 'Lucas, você tem alguma coisa pessoal contra Peugeot?'], ['lucas', 'Eu não. Eles comigo.']],
+      [['selva', 'Quando eu crescer, quero ser um Peugeot.'], ['joao', 'Andar devagar e irritar todo mundo?'], ['selva', 'Isso eu já faço de graça.']],
     ],
   },
 
@@ -91,11 +97,14 @@ export const DIALOGUES = {
       [['joao', 'Caminhão tem prioridade por tamanho.'], ['selva', 'Então o Gol tem prioridade de quê?'], ['joao', 'De ser atropelado.']],
       // v0.2
       [['selva', 'Caminhão tem banheiro?'], ['joao', 'Esse não é o momento, Selva.'], ['selva', 'Mas tem?']],
-      [['lucas', 'Distância. DISTÂNCIA DE CAMINHÃO.'], ['joao', 'Lucas, a gente tá a trinta metros.'], ['lucas', 'É POUCO PRA UM CAMINHÃO.']],
+      [['lucas', 'Eu tô mantendo distância. DISTÂNCIA DE CAMINHÃO.'], ['joao', 'Lucas, a gente tá a trinta metros.'], ['lucas', 'É POUCO PRA UM CAMINHÃO.']],
       [['joao', 'Olha o tamanho disso. A gente cabe no baú.'], ['selva', 'Com o Gol?'], ['joao', 'Com dois Gol.']],
       [['selva', 'Se o caminhão buzinar, a gente buzina de volta.'], ['lucas', 'NINGUÉM BUZINA PRA CAMINHÃO.']],
       [['joao', 'Caminhão na BR é tipo chefe de fase.'], ['selva', 'Tem barra de vida?'], ['joao', 'A nossa.']],
       [['lucas', 'Ele tá mudando de faixa?'], ['joao', 'Ele tá pensando.'], ['lucas', 'CAMINHÃO NÃO PENSA, CAMINHÃO VAI.']],
+      // v0.2.2
+      [['selva', 'Caminhoneiro deve ter a melhor playlist do Brasil.'], ['joao', 'E a pior opinião sobre a gente.']],
+      [['lucas', 'Eu odeio passar do lado de caminhão.'], ['joao', 'Porque é perigoso?'], ['lucas', 'Porque ele me olha de cima.']],
     ],
   },
 
@@ -106,10 +115,10 @@ export const DIALOGUES = {
       [['lucas', 'MEU RETROVISOR!'], ['joao', 'Ainda tá aí. Por enquanto.']],
       [['joao', 'Isso aí foi um centímetro. Talvez meio.'], ['lucas', 'EU SENTI O VENTO DO OUTRO CARRO.']],
       [['selva', 'Faz de novo!'], ['lucas', 'NÃO FAZ DE NOVO!']],
-      [['lucas', 'JOÃO, NÃO ENCOSTA NO MEU CARRO!'], ['joao', 'Tecnicamente, eu não encostei.']],
+      [['joao', 'Lucas, você quase encostou nele.'], ['lucas', 'QUASE NÃO CONTA, JOÃO!']],
       [['selva', 'Dava pra passar um papel ali no meio.'], ['joao', 'Um papel fino.']],
       [['lucas', 'MEU CORAÇÃO PAROU.'], ['selva', 'O motor não. Isso que importa.']],
-      [['joao', 'Isso foi calculado.'], ['selva', 'Foi?'], ['joao', 'Não.']],
+      [['selva', 'Isso foi calculado, Lucas?'], ['lucas', 'Foi.'], ['joao', 'Ele fechou o olho.'], ['lucas', 'EU PISQUEI!']],
       // v0.1.1
       [['selva', 'Encostou?'], ['joao', 'Não.'], ['lucas', 'EU OUVI UM BARULHO!'], ['joao', 'Foi você gritando.']],
       [['joao', 'Lucas, respira.'], ['lucas', 'RESPIRA VOCÊ!']],
@@ -120,11 +129,19 @@ export const DIALOGUES = {
       [['selva', 'Que barulho foi esse?'], ['joao', 'O Lucas.'], ['lucas', 'FOI O VENTO!'], ['joao', 'Foi o Lucas.']],
       [['joao', 'Passamos.'], ['lucas', 'Passamos RASPANDO.'], ['joao', 'Raspando ainda é passar.']],
       [['lucas', 'O retrovisor dele quase beijou o meu!'], ['selva', 'Que lindo.']],
-      [['selva', 'Dá pra fazer isso com os olhos fechados?'], ['joao', 'Uma vez só.'], ['lucas', 'NINGUÉM FECHA O OLHO!']],
+      [['selva', 'Dá pra fazer isso com os olhos fechados?'], ['joao', 'Uma vez só.'], ['lucas', 'EU NÃO VOU TESTAR!']],
       [['joao', 'Se tivesse um juiz, isso era impedimento.']],
-      [['lucas', 'Eu tô suando no banco.'], ['selva', 'No meu banco?'], ['lucas', 'O BANCO É MEU, SELVA.']],
+      [['lucas', 'Minha mão tá suando no volante.'], ['selva', 'Quer que eu segure um pouco?'], ['lucas', 'NINGUÉM SEGURA O MEU VOLANTE.']],
       [['selva', 'Senti cheiro de pneu.'], ['joao', 'É o cheiro da nossa decisão ruim.']],
       [['joao', 'Medição oficial: dois dedos de distância.'], ['lucas', 'DOIS DEDOS DE QUEM?']],
+      // v0.2.2
+      [['joao', 'Isso foi perto.'], ['selva', 'Nem foi.'], ['lucas', 'FOI PERTO, SIM!'], ['selva', 'Foi médio.']],
+      [['lucas', 'Eu vi o carro, eu vi o carro, ninguém precisa narrar.'], ['selva', 'Carro.'], ['lucas', 'SELVA.']],
+      [['joao', 'Lucas, isso foi uma ultrapassagem ou um abraço?'], ['lucas', 'Foi um desvio!'], ['joao', 'Teve contato visual.']],
+      [['lucas', 'Ninguém fala nada.'], ['selva', '...'], ['joao', '...'], ['lucas', 'O SILÊNCIO DE VOCÊS TÁ PIOR.']],
+      [['selva', 'Eu fiz uma promessa agora.'], ['joao', 'Pra quem?'], ['selva', 'Pro santo dos Gol.'], ['lucas', 'Isso existe?'], ['selva', 'A partir de hoje.']],
+      [['lucas', 'Meu para-choque tá aí?'], ['joao', 'Tá.'], ['lucas', 'Inteiro?'], ['joao', 'Fisicamente, sim.']],
+      [['selva', 'O cara do outro carro acenou pra gente.'], ['joao', 'Aquilo não foi aceno, Selva.'], ['selva', 'Foi um dedo só, mas com carinho.']],
     ],
   },
 
@@ -137,14 +154,17 @@ export const DIALOGUES = {
       [['joao', 'Lucas, teu carro tá desenvolvendo uma personalidade própria.'], ['lucas', 'ELE TÁ DESENVOLVENDO UM TRAUMA.']],
       // v0.1.1
       [['selva', 'Três seguidas! Isso é talento.'], ['lucas', 'ISSO É CRIME.']],
-      [['joao', 'Tô começando a achar que é de propósito.'], ['selva', 'Óbvio que é.'], ['lucas', 'POR QUÊ?']],
-      [['lucas', 'Vocês tão tentando ganhar ponto com o MEU carro?'], ['selva', 'Tem multiplicador, Lucas.']],
+      [['joao', 'Lucas, tô começando a achar que é de propósito.'], ['selva', 'Óbvio que é.'], ['lucas', 'NÃO É! O TRÂNSITO QUE VEM EM MIM!']],
+      [['selva', 'Mais uma, Lucas! Tá valendo multiplicador!'], ['lucas', 'MULTIPLICADOR NÃO PAGA FUNILARIA.']],
       // v0.2
       [['selva', 'Tá parecendo videogame.'], ['joao', 'Tá parecendo um videogame que a gente vai perder.']],
-      [['lucas', 'PARA. DE. RASPAR.'], ['joao', 'Ele falou com pausa. É sério.']],
+      [['lucas', 'PARA. DE. APARECER. CARRO.'], ['joao', 'Agora ele tá dando bronca no trânsito.']],
       [['joao', 'Eu tô começando a acreditar em sorte.'], ['selva', 'Eu sempre acreditei.'], ['lucas', 'EU TÔ COMEÇANDO A ACREDITAR EM SANTO.']],
       [['selva', 'Mais uma! Mais uma!'], ['lucas', 'Isso não é show, Selva!']],
       [['joao', 'Essa sequência vai pro relatório.'], ['lucas', 'Que relatório?'], ['joao', 'O do seguro.']],
+      // v0.2.2
+      [['joao', 'Lucas, vou ser sincero: tá ficando bonito.'], ['lucas', 'NÃO ME ELOGIA AGORA, EU PERCO O FOCO.']],
+      [['selva', 'Mais uma e eu desmaio de emoção.'], ['joao', 'Mais uma e eu desmaio de outra coisa.']],
     ],
   },
 
@@ -154,12 +174,14 @@ export const DIALOGUES = {
     conversations: [
       [['selva', 'Cinco seguidas! Alguém tá contando?'], ['joao', 'Eu tô.'], ['lucas', 'EU TÔ CONTANDO OS ANOS DE VIDA QUE PERDI.']],
       [['joao', 'Isso aqui não é mais direção, é coreografia.'], ['selva', 'Bota uma música!']],
-      [['lucas', 'Eu vou descer no próximo semáforo.'], ['joao', 'É uma BR, Lucas. Não tem semáforo.'], ['lucas', 'ENTÃO EU PULO.']],
+      [['lucas', 'Eu vou parar no próximo semáforo.'], ['joao', 'É uma BR, Lucas. Não tem semáforo.'], ['lucas', 'ENTÃO EU INVENTO UM.']],
       // v0.2
       [['joao', 'Ok, isso já é estatisticamente impossível.'], ['selva', 'E a gente tá fazendo.'], ['lucas', 'POR ISSO MESMO!']],
       [['selva', 'Acho que a gente tá ficando bom nisso.'], ['lucas', 'NÃO EXISTE FICAR BOM NISSO.']],
       [['lucas', 'Eu ouvi meu pai falando meu nome completo na minha cabeça.']],
       [['joao', 'Se isso fosse esporte, a gente tava na seleção.'], ['selva', 'Seleção de quê?'], ['joao', 'De gente que não aprende.']],
+      // v0.2.2
+      [['selva', 'Lucas, você é um artista.'], ['joao', 'Um artista procurado.'], ['lucas', 'EU SÓ QUERIA DIRIGIR NORMAL.']],
     ],
   },
 
@@ -210,6 +232,21 @@ export const DIALOGUES = {
       [['joao', 'Quanto tempo falta?'], ['selva', 'Pra onde?'], ['joao', 'Pra qualquer lugar.'], ['selva', 'Uns quarenta minutos.'], ['joao', 'Você nem sabe pra onde.']],
       [['selva', 'Eu tô com fome de novo.'], ['lucas', 'Você comeu um pacote de biscoito agora.'], ['selva', 'Por isso. Abriu o apetite.']],
       [['joao', 'Sabia que a gente tá passando por três cidades sem perceber?'], ['selva', 'Quais?'], ['joao', 'Não percebi.']],
+      // v0.2.2
+      [['selva', 'João, você acredita em vida em outro planeta?'], ['joao', 'Acredito. Só não acredito que eles viriam pra cá.'], ['selva', 'Por causa do trânsito?'], ['joao', 'Por causa da gente.']],
+      [['joao', 'Selva, se você ganhasse na Mega, qual a primeira coisa que comprava?'], ['selva', 'Um Peugeot.'], ['joao', 'Por quê?'], ['selva', 'Pra entender eles por dentro.']],
+      [['selva', 'Qual o barulho que a girafa faz?'], ['joao', 'Nenhum, eu acho.'], ['selva', 'Que bicho educado.'], ['lucas', 'Eu queria um passageiro girafa.']],
+      [['selva', 'Se eu abrisse um restaurante, ia chamar "Já Volto".'], ['joao', 'Por quê?'], ['selva', 'Pra ninguém saber se tá aberto.']],
+      [['selva', 'Eu acho que o João é um robô.'], ['joao', 'Por quê?'], ['selva', 'Você não pisca quando o Lucas grita.'], ['joao', 'Eu me acostumei.']],
+      [['selva', 'Quando a gente chegar, eu quero um açaí.'], ['joao', 'Chegar onde?'], ['selva', 'Onde tiver açaí. O destino se adapta.']],
+      [['selva', 'Eu sempre quis saber o que tem no porta-luvas.'], ['lucas', 'Documento.'], ['selva', 'Só?'], ['lucas', 'Documento e paz. Não abre.']],
+      [['joao', 'Lucas, você conversa com o carro quando tá sozinho?'], ['lucas', 'Não.'], ['joao', 'Lucas.'], ['lucas', 'Às vezes eu agradeço quando ele pega de primeira.']],
+      [['selva', 'Vocês acham que o Gol sente ciúme de outro carro?'], ['joao', 'Do jeito que o Lucas trata, ele se sente filho único.'], ['lucas', 'Ele É filho único.']],
+      [['joao', 'Pergunta honesta, Lucas: se o Gol fosse pro ferro-velho, você chorava?'], ['lucas', 'Não.'], ['selva', 'Ele já tá com o olho cheio só de ouvir.'], ['lucas', 'É O AR-CONDICIONADO.']],
+      [['lucas', 'Esse carro nunca levou uma multa.'], ['joao', 'Que você saiba.'], ['lucas', 'Para de falar como se você soubesse de alguma coisa.'], ['joao', 'Eu só falei.']],
+      [['selva', 'Lucas, se o Gol tivesse um nome, qual seria?'], ['lucas', 'Ele tem nome.'], ['joao', 'Tem?'], ['lucas', 'Não vou falar na frente de vocês.']],
+      [['lucas', 'Dá pra vocês conversarem mais baixo?'], ['joao', 'A gente tá em silêncio, Lucas.'], ['lucas', 'Vocês tão PENSANDO alto.']],
+      [['joao', 'Reparou que o Lucas dirige com a língua pra fora?'], ['lucas', 'Isso é concentração.'], ['selva', 'Parece cachorro na janela.']],
     ],
   },
 
@@ -219,7 +256,7 @@ export const DIALOGUES = {
       [['lucas', 'VOCÊS DOIS NÃO VÃO PAGAR UM PNEU DESSE!'], ['joao', 'A gente nem furou pneu.'], ['lucas', 'AINDA.']],
       [['joao', 'Selva, para de mexer no banco.'], ['selva', 'Tô procurando o botão de ejetar.'], ['lucas', 'NÃO TEM BOTÃO DE EJETAR!']],
       [['lucas', 'Quem tá com o pé no painel?'], ['selva', 'Ninguém.'], ['lucas', 'TEM UM TÊNIS NO PAINEL, SELVA.']],
-      [['selva', 'Quem dirige melhor: eu ou o João?'], ['lucas', 'Ninguém aqui dirige. Isso é só sobrevivência.']],
+      [['selva', 'Quem dirige melhor: eu ou o João?'], ['lucas', 'Nenhum dos dois. Por isso quem dirige sou eu.']],
       [['joao', 'Lucas, tu trocou o óleo desse carro alguma vez?'], ['lucas', 'Isso é pergunta que se faz agora?']],
       [['selva', 'Eu pago a gasolina.'], ['lucas', 'Você falou isso na última viagem.'], ['selva', 'E foi lindo.']],
       // v0.2
@@ -231,8 +268,19 @@ export const DIALOGUES = {
       [['selva', 'Eu escolho a música agora.'], ['lucas', 'O rádio não funciona.'], ['selva', 'Então eu escolho o silêncio.']],
       [['lucas', 'Para de bater no vidro!'], ['selva', 'Tô fazendo bateria.'], ['lucas', 'NO MEU VIDRO NÃO.']],
       [['joao', 'Quem deu a ideia dessa viagem?'], ['selva', 'Você.'], ['joao', 'Ah, é. Então ninguém reclama.']],
-      [['selva', 'O Lucas tá dirigindo no meu ouvido.'], ['lucas', 'Eu nem tô dirigindo!'], ['selva', 'Tá dirigindo emocionalmente.']],
+      [['selva', 'O João tá dirigindo junto com o Lucas.'], ['joao', 'Eu nem encostei no volante!'], ['selva', 'Tá dirigindo emocionalmente.']],
       [['lucas', 'Vocês dois vão limpar o carro depois.'], ['joao', 'Com o quê?'], ['lucas', 'COM A CONSCIÊNCIA DE VOCÊS.']],
+      // v0.2.2
+      [['lucas', 'Quem tá chutando o meu banco?'], ['selva', 'É o ritmo da música.'], ['lucas', 'Não tem música.'], ['selva', 'Na minha cabeça tem.']],
+      [['joao', 'Lucas, a seta tá ligada faz uns três quilômetros.'], ['lucas', 'Eu sei.'], ['joao', 'E vai virar quando?'], ['lucas', 'Quando eu tiver coragem.']],
+      [['lucas', 'SELVA, TIRA A MÃO DO FREIO DE MÃO.'], ['selva', 'Eu só tava apoiando.'], ['lucas', 'Apoia em outra coisa. Na sua vida.']],
+      [['joao', 'Você sempre segura o volante assim, no dez para as duas?'], ['lucas', 'É o certo.'], ['joao', 'Tá mais pra dez e cinco. E tremendo.']],
+      [['lucas', 'Para de mexer no retrovisor!'], ['selva', 'Eu tô me olhando.'], ['lucas', 'ELE É PRA EU VER A ESTRADA, NÃO VOCÊ!']],
+      [['selva', 'Posso abrir a janela?'], ['lucas', 'Não.'], ['selva', 'Só um pouquinho?'], ['lucas', 'Não.'], ['selva', 'Posso pensar em abrir?'], ['lucas', 'Pensa baixo.']],
+      [['joao', 'Você dirige igual a minha vó.'], ['lucas', 'Sua vó tá viva?'], ['joao', 'Tá.'], ['lucas', 'Então ela dirige bem.']],
+      [['lucas', 'Alguém tá comendo salgadinho no meu carro?'], ['selva', 'É um salgadinho imaginário.'], ['lucas', 'ENTÃO POR QUE TEM FARELO NO CÂMBIO?']],
+      [['joao', 'Lucas, posso dar uma opinião sobre a sua direção?'], ['lucas', 'Não.'], ['joao', 'Beleza. Eu anoto e mando por e-mail.']],
+      [['selva', 'Lucas, deixa eu dirigir um pouquinho?'], ['lucas', 'Não.'], ['selva', 'Só a reta.'], ['lucas', 'Selva, é tudo reta.'], ['selva', 'Então é fácil.']],
     ],
   },
 
@@ -240,16 +288,18 @@ export const DIALOGUES = {
     priority: 3, cooldown: 0, chance: 1,
     conversations: [
       [['joao', 'Acho que tem mais carro na pista agora.'], ['selva', 'Será que tem algum evento?'], ['lucas', 'O EVENTO SOMOS NÓS.']],
-      [['lucas', 'Por que tá ficando mais rápido?'], ['joao', 'Eu tô me fazendo a mesma pergunta.']],
+      [['lucas', 'Por que o meu pé não sai do acelerador?'], ['joao', 'Eu tô me fazendo a mesma pergunta.']],
       [['selva', 'Sinto que a BR tá ficando mais apertada.'], ['joao', 'A BR não. O trânsito.']],
       [['joao', 'Isso aqui virou rush de sexta-feira.'], ['lucas', 'É TERÇA!']],
       // v0.2
       [['selva', 'Sinto o vento no meu cabelo.'], ['joao', 'A janela tá fechada.'], ['selva', 'É vento emocional.']],
-      [['lucas', 'Alguém tá acelerando sem me consultar.'], ['joao', 'Ninguém consulta o Lucas.']],
+      [['lucas', 'O carro tá acelerando sem me consultar.'], ['joao', 'Ninguém consulta o Lucas. Nem o Gol.']],
       [['joao', 'O trânsito tá ficando mais criativo.'], ['lucas', 'Criativo não. PERIGOSO.']],
       [['selva', 'Esse ponteiro sobe sozinho?'], ['lucas', 'NÃO DEVERIA!']],
       [['joao', 'Cada quilômetro aparece mais carro. Acho que eles se reproduzem.'], ['selva', 'Peugeot com Peugeot?'], ['joao', 'Dá Peugeot.']],
       [['lucas', 'Eu tô sentindo o carro vibrar.'], ['selva', 'É empolgação.'], ['lucas', 'É O MOTOR PEDINDO AJUDA.']],
+      // v0.2.2
+      [['joao', 'O ponteiro subindo e o Lucas afundando no banco.'], ['lucas', 'É posição de corrida.']],
     ],
   },
 
@@ -267,18 +317,21 @@ export const DIALOGUES = {
       [['selva', 'Se a gente acelerar mais, será que decola?'], ['lucas', 'NÃO É AVIÃO! É UM GOL!']],
       [['joao', 'O motor tá fazendo um barulho que eu nunca ouvi.'], ['lucas', 'É ELE ME XINGANDO.']],
       [['selva', 'Tô sentindo meu rosto ir pra trás.'], ['joao', 'É a gravidade desistindo de você.']],
+      // v0.2.2
+      [['lucas', 'Eu nunca andei tão rápido nesse carro.'], ['joao', 'E nunca mais vai andar.'], ['lucas', 'NÃO FALA ASSIM DO MEU CARRO.']],
+      [['selva', 'Se eu botar a mão pra fora, ela volta?'], ['joao', 'Volta. Em outra cidade.'], ['lucas', 'NINGUÉM BOTA A MÃO PRA FORA!']],
     ],
   },
 
   police_arrive: {
     priority: 4, cooldown: 0, chance: 1,
     conversations: [
-      [['joao', 'Tem uma viatura acompanhando a gente.'], ['selva', 'Deve ser fã.'], ['lucas', 'FÃ É O CARALHO, OLHA PRA FRENTE!']],
+      [['joao', 'Tem uma viatura acompanhando a gente.'], ['selva', 'Deve ser fã.'], ['lucas', 'FÃ É O CARALHO, PARA DE OLHAR PRA TRÁS!']],
       [['selva', 'Que luz bonita é essa atrás?'], ['joao', 'É a polícia, Selva.'], ['selva', 'Ah. Ainda bonita.']],
       [['lucas', 'NÃO, NÃO, NÃO. A POLÍCIA NÃO.'], ['joao', 'Calma. Age natural.'], ['selva', 'Natural como?']],
       [['joao', 'Sirene. Atrás. Agora.'], ['lucas', 'EU NÃO FIZ NADA! O CARRO É MEU MAS EU NÃO FIZ NADA!']],
       // v0.2
-      [['joao', 'Acho que temos um admirador.'], ['selva', 'Dá tchau.'], ['lucas', 'FÃ É O CARALHO, OLHA PRA FRENTE!']],
+      [['joao', 'Acho que temos um admirador.'], ['selva', 'Dá tchau.'], ['lucas', 'NINGUÉM DÁ TCHAU PRA POLÍCIA!']],
       [['selva', 'Tem um carro com luzinha atrás da gente.'], ['joao', 'É a polícia.'], ['selva', 'Ah, achei que era festa.']],
       [['lucas', 'Por que eles tão vindo? Por que eles tão vindo?'], ['joao', 'Talvez seja coincidência.'], ['lucas', 'NUNCA É COINCIDÊNCIA.']],
       [['joao', 'Ok, ninguém faz nada suspeito.'], ['selva', 'Tipo o quê?'], ['joao', 'Tipo tudo que a gente tá fazendo.']],
@@ -306,6 +359,12 @@ export const DIALOGUES = {
       [['selva', 'Liga a seta, pra mostrar que a gente é educado.'], ['lucas', 'ISSO NÃO VAI AJUDAR!']],
       [['lucas', 'Ninguém olha pra trás. Olhar pra trás é confissão.'], ['selva', 'Confissão de quê?'], ['lucas', 'DE TUDO!']],
       [['joao', 'Se perguntarem, o carro é do Lucas.'], ['lucas', 'O CARRO É MEU MESMO!'], ['joao', 'Viu? Já tá confessando.']],
+      // v0.2.2
+      [['selva', 'João, será que a viatura tem ar-condicionado?'], ['joao', 'Deve ter.'], ['selva', 'Então eles tão mais confortáveis que a gente.'], ['lucas', 'POR QUE VOCÊS TÃO FALANDO DISSO?']],
+      [['joao', 'Lucas, velocidade constante.'], ['lucas', 'EU TÔ MANTENDO!'], ['joao', 'Constante. Não crescente.']],
+      [['selva', 'Será que eles também tão com fome?'], ['joao', 'Selva, foco.'], ['selva', 'Eu tô focado. Na fome deles.']],
+      [['lucas', 'Se eu sair dessa, eu lavo o carro todo domingo.'], ['joao', 'Você já lava todo domingo.'], ['lucas', 'Então eu lavo duas vezes.']],
+      [['selva', 'Se pararem a gente, eu falo que o Gol tá doente.'], ['lucas', 'O GOL NÃO É BICHO, SELVA.'], ['selva', 'Mas é da família.'], ['lucas', '...isso é verdade.']],
     ],
   },
 
@@ -317,13 +376,15 @@ export const DIALOGUES = {
       [['joao', 'Tá ficando feio, galera.'], ['selva', 'Feio quanto?'], ['joao', 'Feio de ligar pra mãe.']],
       // v0.1.1
       [['selva', 'Acho que eles querem ultrapassar.'], ['joao', 'Eles não querem ultrapassar, Selva.']],
-      [['lucas', 'PARA DE RASPAR NOS CARROS, ELES TÃO VENDO TUDO!'], ['joao', 'Tá bom, tá bom, dirigindo bonito agora.']],
+      [['joao', 'Lucas, para de raspar nos carros, eles tão vendo tudo!'], ['lucas', 'TÁ BOM, TÁ BOM! DIRIGINDO BONITO AGORA!']],
       [['joao', 'Pressão subindo, rapaziada.'], ['selva', 'A minha também.']],
       // v0.2
       [['lucas', 'A SIRENE TÁ DENTRO DO CARRO?'], ['joao', 'Não, é você gritando junto.']],
       [['selva', 'Eles tão tão perto que dava pra pedir um isqueiro.'], ['lucas', 'NINGUÉM PEDE NADA!']],
       [['joao', 'A barrinha tá enchendo.'], ['selva', 'Que barrinha?'], ['joao', 'A da nossa vida.']],
-      [['lucas', 'Para de raspar! Eles anotam tudo!'], ['selva', 'Será que eles dão nota?']],
+      [['joao', 'Para de raspar, Lucas! Eles anotam tudo!'], ['selva', 'Será que eles dão nota?']],
+      // v0.2.2
+      [['selva', 'O policial tá mexendo a boca.'], ['joao', 'Tá falando no rádio.'], ['selva', 'Ou cantando.'], ['lucas', 'NINGUÉM CANTA NUMA PERSEGUIÇÃO!']],
     ],
   },
 
@@ -334,13 +395,15 @@ export const DIALOGUES = {
       [['lucas', 'ELES VÃO ENCOSTAR! ELES VÃO ENCOSTAR!'], ['joao', 'Dirige reto, sem gracinha!']],
       [['joao', 'Última chance de parecer inocente.'], ['selva', 'A gente nunca pareceu.']],
       [['selva', 'Tô vendo a placa deles no retrovisor.'], ['lucas', 'ISSO NÃO É BOM, SELVA!']],
-      [['lucas', 'CALMA. NINGUÉM RASPA EM NADA AGORA.'], ['selva', 'E se for sem querer?'], ['lucas', 'NEM SEM QUERER!']],
+      [['lucas', 'CALMA. EU NÃO VOU RASPAR EM NADA AGORA.'], ['selva', 'E se for sem querer?'], ['lucas', 'NEM SEM QUERER!']],
       // v0.2
       [['joao', 'Rapaziada, essa é a hora de dirigir igual pai de família.'], ['selva', 'Meu pai dirige pior.']],
       [['lucas', 'EU NÃO QUERO SER PRESO NO MEU PRÓPRIO CARRO!']],
       [['selva', 'Bora se render?'], ['lucas', 'NÃO!'], ['joao', 'Não. Ainda.']],
       [['joao', 'Calma. Faixa do meio. Velocidade constante. Cara de inocente.'], ['selva', 'Que cara é essa?']],
       [['lucas', 'SE ENCOSTAREM NO MEU PARA-CHOQUE EU DESÇO E RECLAMO.'], ['joao', 'Da polícia?'], ['lucas', 'DE QUALQUER UM!']],
+      // v0.2.2
+      [['joao', 'Lucas, eu confio em você.'], ['lucas', 'Não fala isso que eu fico nervoso.'], ['joao', 'Tá bom, eu não confio.'], ['lucas', 'PIOROU.']],
     ],
   },
 
@@ -358,13 +421,16 @@ export const DIALOGUES = {
       [['joao', 'Ok, oficialmente despistamos a polícia.'], ['lucas', 'Não fala isso alto.'], ['joao', 'Despistamos a polícia.'], ['lucas', 'MAIS BAIXO!']],
       [['selva', 'Que pena, eu tava me acostumando com a luz azul.']],
       [['joao', 'Eles vão voltar.'], ['lucas', 'Como você sabe?'], ['joao', 'Eles sempre voltam.']],
+      // v0.2.2
+      [['lucas', 'Alguém ainda tá vendo eles?'], ['selva', 'Eu tô vendo uma vaca.'], ['joao', 'A vaca não é da polícia.'], ['lucas', 'Então tá ótimo.']],
+      [['joao', 'Viu, Lucas? Deu certo.'], ['lucas', 'Deu certo porque eu dirigi bem.'], ['joao', 'Deu certo porque eles cansaram.'], ['selva', 'Deu certo porque eu acenei.']],
     ],
   },
 
   record: {
     priority: 3, cooldown: 0, chance: 1,
     conversations: [
-      [['joao', 'Rapaziada, recorde. Nunca chegamos tão longe.'], ['selva', 'Alguém tirou print?'], ['lucas', 'NINGUÉM TIRA PRINT DIRIGINDO!']],
+      [['joao', 'Rapaziada, recorde. Nunca chegamos tão longe.'], ['selva', 'Alguém tirou print?'], ['lucas', 'EU NÃO VOU TIRAR PRINT DIRIGINDO!']],
       [['selva', 'Novo recorde!'], ['lucas', 'Recorde de quanto tempo meu carro aguenta vocês.']],
       [['joao', 'Isso aqui já entrou pra história.'], ['selva', 'Pra história da BR.'], ['lucas', 'PRA HISTÓRIA DA MINHA OFICINA.']],
       // v0.2
@@ -373,6 +439,8 @@ export const DIALOGUES = {
       [['lucas', 'Eu não acredito que meu carro aguentou até aqui.'], ['joao', 'Nem ele.']],
       [['joao', 'Marca pessoal batida.'], ['selva', 'Vou contar pra minha mãe.'], ['lucas', 'NÃO CONTA PRA NINGUÉM!']],
       [['selva', 'Recorde novo! Comemora?'], ['joao', 'Comemora sem tirar a mão do volante.']],
+      // v0.2.2
+      [['lucas', 'Recorde?'], ['joao', 'Recorde.'], ['lucas', 'Então agora todo mundo quieto, que eu não quero estragar.']],
     ],
   },
 
@@ -388,6 +456,8 @@ export const DIALOGUES = {
       [['selva', 'Eu queria um carro prata.'], ['lucas', 'Traidor.']],
       [['lucas', 'É Peugeot ou não é?'], ['joao', 'Não importa, Lucas. A gente desvia igual.']],
       [['selva', 'Carro prata é tipo pombo de estrada.'], ['joao', 'Você já usou essa piada com o Peugeot.'], ['selva', 'Mas é verdade pros dois.']],
+      // v0.2.2
+      [['selva', 'Esse prata é diferente.'], ['joao', 'Diferente como?'], ['selva', 'Tem cara de quem paga as contas em dia.']],
     ],
   },
 
@@ -405,6 +475,8 @@ export const DIALOGUES = {
       [['selva', 'Por que ninguém usa a faixa da direita?'], ['joao', 'A faixa da direita é lenda urbana.']],
       [['lucas', 'Esse ali tá no meio de duas faixas!'], ['joao', 'Ele não conseguiu escolher.'], ['selva', 'Me identifico.']],
       [['selva', 'Vocês acham que esses carros sabem que existem?'], ['joao', 'Selva, de onde vem isso?'], ['selva', 'Do coração.']],
+      // v0.2.2
+      [['lucas', 'Escolhe uma faixa! É só escolher uma!'], ['selva', 'Eles tão indecisos.'], ['joao', 'Igual você no cardápio.'], ['selva', 'Isso foi pessoal.']],
     ],
   },
 
@@ -424,6 +496,16 @@ export const DIALOGUES = {
       [['lucas', 'Cada um fala uma coisa boa sobre o Gol.'], ['joao', 'Ele liga.'], ['selva', 'Ele é vermelho.'], ['lucas', 'Vocês não merecem esse carro.']],
       [['joao', 'Alguém trouxe carregador?'], ['selva', 'Eu trouxe o cabo.'], ['lucas', 'E a tomada?'], ['selva', 'Achei que vinha no carro.']],
       [['selva', 'Se a gente se perder, qual é o ponto de encontro?'], ['joao', 'O Gol.'], ['lucas', 'O Gol ESTÁ com a gente.'], ['selva', 'Então ninguém se perde. Perfeito.']],
+      // v0.2.2
+      [['joao', 'Ok, quem viu o que aconteceu ali atrás?'], ['selva', 'Um cavalo.'], ['lucas', 'Um Peugeot.'], ['joao', 'Era uma placa.']],
+      [['lucas', 'Vou falar uma vez só: ninguém mexe no ar.'], ['joao', 'Tá bom.'], ['selva', 'Mexi.'], ['lucas', 'EU NEM TERMINEI DE FALAR.']],
+      [['selva', 'Gente, vocês sentiram isso?'], ['joao', 'O quê?'], ['selva', 'Nada. Só queria ver se vocês tavam acordados.'], ['lucas', 'EU TÔ DIRIGINDO. É CLARO QUE EU TÔ ACORDADO.']],
+      [['joao', 'Ranking do dia: quem gritou mais?'], ['selva', 'O Lucas.'], ['lucas', 'EU NÃO GRITEI.'], ['joao', 'Ele gritou pra dizer que não gritou.']],
+      [['lucas', 'Alguém fala comigo, eu preciso me distrair.'], ['joao', 'Do quê?'], ['lucas', 'Do medo.'], ['selva', 'Sabia que tartaruga respira pela bunda?'], ['lucas', 'Não era isso.']],
+      [['selva', 'Eu acho que esse carro tem um fantasma.'], ['joao', 'Tem. O fantasma da revisão atrasada.'], ['lucas', 'A revisão tá em dia!'], ['joao', 'De qual ano?']],
+      [['joao', 'Lucas, quanto tem de gasolina?'], ['lucas', 'Suficiente.'], ['selva', 'Suficiente pra quê?'], ['lucas', 'Pra eu não pensar nisso.']],
+      [['lucas', 'Tô ouvindo um barulho novo.'], ['joao', 'Que barulho?'], ['lucas', 'Tipo um "tec".'], ['selva', 'Tec tec ou tec... tec?'], ['lucas', 'Agora eu tô ouvindo os dois.']],
+      [['joao', 'Se o Gol sobreviver a essa viagem, ele merece aposentadoria.'], ['lucas', 'Ele merece um museu.'], ['selva', 'Ele merece um filho.'], ['joao', 'Não incentiva o Lucas.']],
     ],
   },
 
@@ -439,6 +521,8 @@ export const DIALOGUES = {
       [['selva', 'Quantos pontos pra ganhar um Gol novo?'], ['lucas', 'EU NÃO QUERO UM GOL NOVO, EU QUERO ESSE INTEIRO.']],
       [['joao', 'Essa pontuação é impressionante e preocupante na mesma proporção.']],
       [['selva', 'A gente devia mandar isso pra alguém.'], ['joao', 'Pra quem?'], ['selva', 'Pra todo mundo.']],
+      // v0.2.2
+      [['joao', 'Lucas, se você bater agora, a pontuação some?'], ['lucas', 'Não fala de bater.'], ['joao', 'Eu só perguntei da pontuação.'], ['lucas', 'Não fala de NADA.']],
     ],
   },
 
@@ -455,8 +539,8 @@ export const DIALOGUES = {
   egg_no_touch: {
     priority: 3, cooldown: 0, chance: 1,
     conversations: [
-      [['selva', 'Ninguém tá dirigindo?'], ['joao', 'Eu achei que era você.'], ['lucas', 'O CARRO TÁ SOZINHO?']],
-      [['joao', 'Interessante. O Gol aprendeu a dirigir.'], ['lucas', 'Alguém segura esse volante, por favor.']],
+      [['selva', 'O Lucas tá dirigindo?'], ['joao', 'Faz meio minuto que ele não mexe no volante.'], ['lucas', 'EU TÔ COM MEDO DE MEXER!']],
+      [['joao', 'Interessante. O Gol aprendeu a dirigir sozinho.'], ['lucas', 'Eu tô aqui, João! Eu só travei.']],
     ],
   },
 
@@ -464,8 +548,8 @@ export const DIALOGUES = {
   egg_shoulder: {
     priority: 3, cooldown: 0, chance: 1,
     conversations: [
-      [['lucas', 'Por que a gente tá andando no acostamento?'], ['joao', 'Não é acostamento. É faixa VIP.']],
-      [['selva', 'Vamos colher umas flores ali do lado?'], ['lucas', 'SAI DA BEIRADA!']],
+      [['joao', 'Por que a gente tá andando no acostamento?'], ['lucas', 'Não é acostamento. É faixa VIP.']],
+      [['selva', 'Vamos colher umas flores ali do lado?'], ['lucas', 'NINGUÉM VAI COLHER NADA! EU SÓ TÔ LONGE DOS PEUGEOT!']],
     ],
   },
 
@@ -525,6 +609,9 @@ export const DIALOGUES = {
       [['joao', 'Vou ser sincero: a culpa foi do Peugeot.']],
       [['lucas', 'Alguém tem o número de um guincho?']],
       [['selva', 'Pelo menos ninguém derrubou o pastel.']],
+      // v0.2.2
+      [['joao', 'Lucas, antes de você falar qualquer coisa: não foi a gente.']],
+      [['selva', 'Pelo menos o rádio continua quebrado do mesmo jeito.']],
     ],
   },
 
@@ -541,6 +628,8 @@ export const DIALOGUES = {
       [['lucas', 'O DOCUMENTO TÁ NO PORTA-LUVAS! PODE OLHAR!']],
       [['selva', 'É multa ou é bronca? Porque bronca a gente aguenta.']],
       [['joao', 'Tecnicamente a gente só tava dirigindo muito.']],
+      // v0.2.2
+      [['lucas', 'Seu guarda, pode só não encostar no capô?']],
     ],
   },
 };

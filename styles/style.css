@@ -40,14 +40,31 @@ html, body {
   touch-action: none;
 }
 
-/* Efeito CRT: scanlines + vinheta, por cima de tudo e sem capturar toques */
+/* Efeito CRT: só um toque retrô, por cima de tudo e sem capturar toques.
+   v0.2.2: bem mais suave que antes (scanline 0.16 → 0.05, período 3px → 4px; vinheta 0.55 → 0.22,
+   começando mais longe do centro). Estático: sem ruído, flicker ou animação, então não pesa na GPU.
+   Calibragem: ajuste só as variáveis abaixo. */
+:root {
+  --crt-line: 0.05;      /* opacidade das scanlines */
+  --crt-period: 4px;     /* distância entre scanlines */
+  --crt-vignette: 0.22;  /* escurecimento das bordas */
+  --crt-vignette-start: 68%;
+}
+
+/* Telas pequenas: as linhas ficam proporcionalmente mais grossas, então ficam ainda mais leves */
+@media (max-width: 480px), (max-height: 560px) {
+  :root {
+    --crt-line: 0.035;
+    --crt-vignette: 0.18;
+  }
+}
+
 #crt {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 10;
   background:
-    repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.16) 0px, rgba(0, 0, 0, 0.16) 1px, transparent 1px, transparent 3px),
-    radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, 0.55) 100%);
-  mix-blend-mode: multiply;
+    repeating-linear-gradient(to bottom, rgba(0, 0, 0, var(--crt-line)) 0px, rgba(0, 0, 0, var(--crt-line)) 1px, transparent 1px, transparent var(--crt-period)),
+    radial-gradient(ellipse at center, transparent var(--crt-vignette-start), rgba(0, 0, 0, var(--crt-vignette)) 100%);
 }
